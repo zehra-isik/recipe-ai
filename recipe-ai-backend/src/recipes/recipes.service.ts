@@ -13,7 +13,7 @@ import FormData = require('form-data');
 export class RecipesService {
   private readonly geminiKey =
     process.env.GEMINI_API_KEY ||
-    'AQ.Ab8RN6Lckkxt6cy5un_-dUATUZ7ry63AguoHf9yxD8m7GVzmUA';
+    '';
   private readonly genAI = new GoogleGenerativeAI(this.geminiKey);
 
   private readonly botHeaders = {
